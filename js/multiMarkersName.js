@@ -15,8 +15,8 @@ AFRAME.registerComponent('markers_start',{
 		{
 			var url="resources/markers/pattern-Individual_Blocks-"+i+".patt";
 			markersURLArray.push(url);
-			var url="resources/markersPng/pattern-Individual_Blocks-"+i+".jpg";
-			markersNameArray.push(url);
+			var id="resources/markersPng/pattern-Individual_Blocks-"+i+".jpg";
+			markersNameArray.push(id);
 			//console.log(url);
 		}
 
