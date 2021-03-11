@@ -15,8 +15,7 @@ AFRAME.registerComponent('markers_start',{
 		{
 			var url="resources/markers/pattern-Individual_Blocks-"+i+".patt";
 			markersURLArray.push(url);
-			var id="resources/markersPng/pattern-Individual_Blocks-"+i+".jpg";
-			markersNameArray.push(id);
+			markersNameArray.push('Marker_'+i);
 			//console.log(url);
 		}
 
@@ -33,8 +32,8 @@ AFRAME.registerComponent('markers_start',{
 			//Adding text to each marker
 			var textEl = document.createElement('a-entity');
 			
-			textEl.setAttribute('id','image');
-			textEl.setAttribute('image',{align: 'center', value:markersNameArray[k], width: '5.5'});
+			textEl.setAttribute('id','text');
+			textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.object3D.position.set(0, 0.7, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
